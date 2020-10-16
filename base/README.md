@@ -476,6 +476,13 @@ git diff branchOne branchTwo -- path/fileName.txt
 
 比较更新前后的文件差异 
 
-```javascript
-git diff fileName
+<br>
+
+#### 删除已经新增的文件或者文件夹
+
+```
+git clean -n    //查看将要删除的内容
+git clean -f   //删除已经新增的文件
+git clean -df  //删除已经新增的文件和文件夹
+git clean -xdf  //删除所有文件，包含隐形文件
 ```
