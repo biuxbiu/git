@@ -6,7 +6,7 @@
 
 
 [GitHub](https://github.com/biuxbiu)
-[Get Started](/base/#javascript)
+[Get Started](/base/#git)
 
 ![color](#fff)
 
