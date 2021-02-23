@@ -31,6 +31,7 @@
 * [放弃本地的的修改](base/?id=放弃本地的的修改)
 * [比较两个文件的差异](base/?id=比较两个文件的差异)
 * [删除已经新增的文件或者文件夹](base/?id=删除已经新增的文件或者文件夹)
+* [git log中文乱码](base/?id=git-log中文乱码)
 
 
 ## 查看你的git设置
@@ -429,6 +430,21 @@ git clean -f   //删除已经新增的文件
 git clean -df  //删除已经新增的文件和文件夹
 git clean -xdf  //删除所有文件，包含隐形文件
 ```
+
+## git log中文乱码
+
+安装了 `oh-my-zsh` 之后发现 `git log` 的中文乱码了，只需要执行
+
+```
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+```
+
+>执行了之后需要将终端重启。
+
+
+
+
 
 
 [...]
