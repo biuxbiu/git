@@ -6,7 +6,8 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: none;
     -webkit-touch-callout: none;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: SF Pro SC, SF Pro Display, SF Pro Icons, AOS Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 body:not(.ready) {
@@ -69,7 +70,8 @@ html {
 body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    color: #34495e;
+    /* color: rgb(177, 177, 177); */
+    color: rgba(0, 0, 0, .6);
     font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
     font-size: 15px;
     letter-spacing: 0;
@@ -241,10 +243,6 @@ main.hidden {
     color: #000000
 }
 
-.anchor:hover {
-    text-decoration: underline
-}
-
 .sidebar {
     border-right: 1px solid rgba(0, 0, 0, .07);
     overflow-y: auto;
@@ -365,14 +363,14 @@ body.sticky .sidebar-toggle {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 300px;
-    transition: left .25s ease
+    left: 0;
+    transition: left .25s ease;
 }
 
 .markdown-section {
     margin: 0 auto;
     max-width: 800px;
-    padding: 30px 15px 40px;
+    /* padding: 30px 15px 40px; */
     position: relative
 }
 
@@ -425,11 +423,14 @@ body.sticky .sidebar-toggle {
 
 .markdown-section p.tip {
     border-bottom-right-radius: 2px;
-    border-left: 4px solid #f66;
     border-top-right-radius: 2px;
     margin: 1em 0;
     padding: 12px 24px 12px 30px;
-    position: relative
+    position: relative;
+    border-left: 4px solid rgb(255, 102, 102, .5);
+    /* border: 1px solid rgb(255, 102, 102, .5); */
+    background: 1px solid rgb(255, 102, 102, .5);
+    margin-top: 50px;
 }
 
 .markdown-section p.tip:before {
@@ -447,10 +448,6 @@ body.sticky .sidebar-toggle {
     width: 20px;
     text-align: center;
     top: 14px
-}
-
-.markdown-section p.tip code {
-    background-color: #efefef
 }
 
 .markdown-section p.tip em {
@@ -473,6 +470,12 @@ body.close .sidebar-toggle {
 
 body.close .content {
     left: 0
+}
+
+.sidebar {
+    left: 50%;
+    transform: translate(-100%);
+    margin-left: -430px;
 }
 
 @media print {
@@ -733,8 +736,8 @@ body {
 
 .sidebar ul li.active>a {
     /* border-right: 2px solid; */
-    color: var(--theme-color, #42b983);
-    font-weight: 600
+    color: var(--theme-color, #000);
+    font-weight: bold;
 }
 
 .app-sub-sidebar li:before {
@@ -753,8 +756,8 @@ body {
 }
 
 .markdown-section a {
-    color: var(--theme-color, #42b983);
-    font-weight: 600
+    color: var(--theme-color, #000);
+    font-weight: bold;
 }
 
 .markdown-section h1 {
@@ -762,7 +765,7 @@ body {
     margin: 0 0 1rem
 }
 
-.markdown-section h2 {
+.markdown-section pre>code.markdown-section h2 {
     font-size: 1.75rem;
     margin: 65px 0 .8rem
 }
@@ -803,11 +806,12 @@ body {
 }
 
 .markdown-section blockquote {
-    border-left: 4px solid var(--theme-color, #42b983);
+    border-left: 4px solid var(--theme-color, rgba(0, 0, 0, .5));
     color: #858585;
     margin: 1em 0;
     padding: 12px 24px 12px 30px;
-    background: var(--theme-color, #f8f8f8);
+    background: rgb(248, 248, 248, .4);
+    /* background: var(--theme-color, #f8f8f8); */
 }
 
 .markdown-section blockquote p {
@@ -825,7 +829,8 @@ body {
 
 .markdown-section code {
     border-radius: 2px;
-    color: #e96900;
+    color: #000;
+    font-weight: bold;
     /* color: #42b983; */
     /* color: #fff; */
     /* background: #42b983; */
@@ -845,9 +850,8 @@ body {
     font-family: Roboto Mono, Monaco, courier, monospace;
 } */
 
-.markdown-section code,
 .markdown-section pre {
-    background-color: #f8f8f8;
+    background-color: rgb(248, 248, 248, .4);
     font-family: Roboto Mono, Monaco, courier, monospace;
 }
 
@@ -857,7 +861,7 @@ body {
     line-height: 1.5rem;
     margin: 1.2em 0;
     overflow: auto;
-    padding: 0 1.4rem;
+    padding: 0 1rem;
     position: relative;
     word-wrap: normal
 }
@@ -961,17 +965,16 @@ body {
 .markdown-section pre>code {
     -moz-osx-font-smoothing: initial;
     -webkit-font-smoothing: initial;
-    background-color: #f8f8f8;
+    background-color: none;
     border-radius: 2px;
     color: #525252;
     display: block;
-    font-family: Roboto Mono, Monaco, courier, monospace;
     font-size: .8rem;
     line-height: inherit;
     margin: 0 2px;
     max-width: inherit;
     overflow: inherit;
-    padding: 2.2em 5px;
+    padding: 1em 5px;
     white-space: inherit
 }
 
@@ -1070,4 +1073,8 @@ pre:after {
 
 .descripe {
     display: inline-block;
+}
+
+.docsify-copy-code-button{
+    font-size: 12px;
 }

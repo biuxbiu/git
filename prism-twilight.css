@@ -87,7 +87,8 @@
  .token.constant,
  .token.symbol,
  .token.deleted {
-     color: #905;
+     /* color: #905; */
+     color: #525252;
  }
  
  .token.selector,
@@ -96,7 +97,7 @@
  .token.char,
  .token.builtin,
  .token.inserted {
-     color: #690;
+     color: #525252;
  }
  
  .token.operator,

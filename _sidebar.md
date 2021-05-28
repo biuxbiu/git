@@ -1,4 +1,4 @@
-- <a href="http://www.biuxbiu.design/#/" target="_blank"><img class="logo" src="img/logo.png" /></a>
+<!-- - <a href="http://www.biuxbiu.design/#/" target="_blank"><img class="logo" src="img/logo.png" /></a> -->
 
 * [Git ](base/#Git)
     * [查看你的git设置](base/?id=查看你的git设置)
