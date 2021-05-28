@@ -895,7 +895,7 @@ body {
 }
 
 .token.string {
-    color: var(--theme-color, #42b983)
+    /* color: var(--theme-color, #42b983) */
 }
 
 .token.selector {
