@@ -249,8 +249,6 @@ git remote add origin [gitUrl]
 git push -u origin master
 ```
 
-## 常见问题
-
 #### 查看提交记录
 
 ```js
@@ -480,6 +478,9 @@ revert：回滚到上一个版本
 style：仅修改空格、格式缩进、逗号等等，不改变代码逻辑
 test：测试用例，包括单元测试、集成测试等
 ```
+
+
+## 常见问题
 
 ###### push 问题
 
