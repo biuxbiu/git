@@ -313,16 +313,16 @@ git diff ffd98b:filename b8e7b00:filename
 #### 删除已经新增的文件或者文件夹
 
 ```js
-git clean -n    
+git clean -n
 //查看将要删除的内容
 
-git clean -f   
+git clean -f
 //删除已经新增的文件
 
-git clean -df  
+git clean -df
 //删除已经新增的文件和文件夹
 
-git clean -xdf  
+git clean -xdf
 //删除所有文件，包含隐形文件
 ```
 
@@ -359,55 +359,55 @@ git remote set-url origin xxxxxxx.github.com
 #### 分支操作
 
 ```js
-git branch                  
+git branch
 //查看本地仓库所有分支
 
-git branch -vv              
+git branch -vv
 //查看分支的关联信息
 
-git branch -a               
+git branch -a
 //查看远端和本地的所有分支
 
-git branch -r               
+git branch -r
 //查看远程分支
 
-git branch -b dev           
+git branch -b dev
 //新建一个 `dev` 分支
 
-git branch dev              
+git branch dev
 //本地创建 `dev` 分支
 
-git branch dev -d           
+git branch dev -d
 //删除 `dev` 分支
 
-git branch -m dev pro       
+git branch -m dev pro
 //更改分支名字
 
-git checkout -b dev         
+git checkout -b dev
 //本地创建 `dev` 分支并且切换到 `dev`分支
 
-git checkout dev            
+git checkout dev
 //切换到 `dev`分支
 
-git checkout .**            
+git checkout .**
 //放弃所有更改
 
-git checkout fileName       
+git checkout fileName
 //放弃对 `fileName` 的所有更改
 
-git push                    
+git push
 //push 所有分支
 
-git push origin master      
+git push origin master
 //推送的远端的主分支
 
-git push origin dev         
+git push origin dev
 //推送的远端的 `dev` 分支
 
-git push origin -d dev      
+git push origin -d dev
 //删除远端的 `dev` 分支
 
-git push -u origin master   
+git push -u origin master
 //将本地分支推送到远程，如果远程没有分支，建立它并把它设置为主分支
 ```
 
@@ -450,18 +450,24 @@ git remote rm origin
 git remote add origin [url]
 ```
 
+或者重新设置仓库地址
+
+```js
+git remote set-url origin xxxxxxx.github.com
+```
+
 #### 合并分支
 
 ```js
-git add -A                      
+git add -A
 //你需要先把 `dev` 分支提交到远程
 
 git commit -m 'dev'
 git push
-git checkout master             
+git checkout master
 //然后你需要切换到主分支 `master`
 
-git merge dev                   
+git merge dev
 //合并 `dev` 分支到 `master` 主分支
 ```
 
@@ -478,7 +484,6 @@ revert：回滚到上一个版本
 style：仅修改空格、格式缩进、逗号等等，不改变代码逻辑
 test：测试用例，包括单元测试、集成测试等
 ```
-
 
 ## 常见问题
 
