@@ -195,7 +195,7 @@ git log -p [fileName]
 git log --pretty=oneline
 ```
 
-#### Git 工作流
+#### git 工作流
 
 我们平常在修改之后基本会有哪几个命令会用到的？
 
