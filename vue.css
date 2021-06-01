@@ -1076,6 +1076,11 @@ pre:after {
     display: inline-block;
 }
 
-.docsify-copy-code-button{
+.docsify-copy-code-button {
     font-size: 12px;
+}
+
+.search input:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--theme-color, rgba(0, 0, 0, .4)) !important;
 }

@@ -1,6 +1,6 @@
 <!-- - <a href="http://www.biuxbiu.design/#/" target="_blank"><img class="logo" src="img/logo.png" /></a> -->
 
-* [Git ](base/#Git)
+* [Git ](base/?id=git)
     * [查看你的 git 设置](base/?id=查看你的-git-设置)
     * [设置账户关联](base/?id=设置账户关联)
     * [初始化一个仓库](base/?id=初始化一个仓库)
