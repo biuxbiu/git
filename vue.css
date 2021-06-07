@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600");
 
+/* :root {
+    --theme-color: #017acd;
+} */
+
 * {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -680,12 +684,12 @@ section.cover .cover-main>p:last-child a:last-child {
 }
 
 section.cover .cover-main>p:last-child a:last-child:hover {
-    color: #42b983;
+    color: var(--theme-color, #42b983);
     background: #fff;
 }
 
 section.cover .cover-main>p:last-child a:hover {
-    color: #42b983;
+    color: var(--theme-color, #42b983);
     background: #fff;
 }
 
@@ -768,26 +772,34 @@ body {
 
 .markdown-section pre>code.markdown-section h2 {
     font-size: 1.75rem;
-    margin: 65px 0 .8rem
+    margin: 65px 0 0
+}
+
+.markdown-section h2 {
+    font-size: 1.75rem;
+    margin: 40px 0 0;
 }
 
 .markdown-section h3 {
     font-size: 1.5rem;
-    margin: 40px 0 .6rem
+    margin: 40px 0 0
 }
 
 .markdown-section h4 {
     font-size: 1.25rem;
     margin-top: 70px;
+    margin-bottom: 0;
 }
 
 .markdown-section h5 {
-    font-size: 1rem
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .markdown-section h6 {
     color: #777;
-    font-size: 1rem
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .markdown-section figure {
