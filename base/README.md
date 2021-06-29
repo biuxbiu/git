@@ -69,6 +69,18 @@ git restore <filename>
 git restore ./
 ```
 
+#### 取消修改
+
+```js
+//取消对 file.js 的修改
+git restore file.js
+git checkout file.js
+
+//取消对所有文件的修改
+git restore ./
+git checkout ./
+```
+
 #### 提交到本地版本库
 
 然后使用 `git commit` 方法将提交版本到本地仓库
